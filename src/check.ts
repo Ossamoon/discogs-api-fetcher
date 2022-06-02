@@ -75,8 +75,12 @@ const performerRoles: string[] = [
 ];
 
 const nonPerformerRoles: string[] = [
+  "Conductor",
+  "A&R",
   "Recording Supervisor",
   "Liner Notes",
+  "Product Manager",
+  "Creative Director",
   "Producer",
   "Executive-Producer",
   "Co-producer",
@@ -84,6 +88,8 @@ const nonPerformerRoles: string[] = [
   "Design",
   "Cover",
   "Graphics",
+  "Painting",
+  "Illustration",
   "Artwork",
   "Art Direction",
   "Engineer",
@@ -99,12 +105,14 @@ const nonPerformerRoles: string[] = [
   "Arranged By",
   "Directed By",
   "Mixed By",
+  "Remastered By",
 ];
 
 export const getPerformingRoles = (artist: Artist): string[] | undefined => {
   const roles = artist.role
+    .replace(/\[[^\[\]]*\]/g, "")
     .split(",")
-    .map((str) => str.replace(/\[.*\]/g, "").trim());
+    .map((str) => str.trim());
   if (intersection<string>(roles, performerRoles).length > 0) {
     return intersection<string>(roles, performerRoles);
   }

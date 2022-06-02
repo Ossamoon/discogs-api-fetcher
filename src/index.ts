@@ -40,6 +40,15 @@ const getArtistsDataFromMasterId = async (master_id: number) => {
 
   console.log("data_quality:", release.data_quality);
 
+  if (
+    release.formats.some((format) =>
+      format.descriptions.includes("Compilation")
+    )
+  ) {
+    console.log("This is compilation album!!");
+    return;
+  }
+
   console.log("Artists:");
   for (const artist of release.artists) {
     logArtistRole(artist);
