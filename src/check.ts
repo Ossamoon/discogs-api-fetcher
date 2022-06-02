@@ -1,23 +1,52 @@
 import { Artist } from "./types";
 import { intersection } from "./lib";
 
-const whiteRoles: string[] = ["Alto Saxophone", "Bass", "Drums", "Piano"];
+const performerRoles: string[] = [
+  "Flute",
+  "Clarinet",
+  "Saxophone",
+  "Alto Saxophone",
+  "Tenor Saxophone",
+  "Trumpet",
+  "Flugelhorn",
+  "Trombone",
+  "Tuba",
+  "Drums",
+  "Vibraphone",
+  "Percussion",
+  "Voice",
+  "Piano",
+  "Keyboards",
+  "Guitar",
+  "Bass",
+];
 
-const blackRoles: string[] = [
-  "Lacquer Cut By",
+const nonPerformerRoles: string[] = [
   "Liner Notes",
   "Producer",
   "Design",
+  "Cover",
+  "Engineer",
+  "Written-By",
   "Photography By",
   "Recorded By",
+  "Lacquer Cut By",
+  "Composed By",
+  "Supervised By",
+  "Mastered By",
+  "Translated By",
+  "Arranged By",
+  "Directed By",
 ];
 
 export const getPerformingRoles = (artist: Artist): string[] | undefined => {
-  const roles = artist.role.split(",").map((str) => str.trim());
-  if (intersection<string>(roles, whiteRoles).length > 0) {
-    return intersection<string>(roles, whiteRoles);
+  const roles = artist.role
+    .split(",")
+    .map((str) => str.replace(/\[.*\]/g, "").trim());
+  if (intersection<string>(roles, performerRoles).length > 0) {
+    return intersection<string>(roles, performerRoles);
   }
-  if (intersection<string>(roles, blackRoles).length > 0) {
+  if (intersection<string>(roles, nonPerformerRoles).length > 0) {
     return [];
   }
   return undefined;
