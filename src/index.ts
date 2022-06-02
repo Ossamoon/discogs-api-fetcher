@@ -3,9 +3,9 @@ import { fetchMaster, fetchRelease } from "./fetch";
 import { getPerformingRoles } from "./check";
 import { Artist } from "./types";
 
-const tab = `  `;
-
 const logArtistRole = (artist: Artist): void => {
+  const tab = `  `;
+
   if (artist.role === "") {
     console.error(tab, `${artist.name}: No Role`);
     return;
@@ -22,6 +22,7 @@ const logArtistRole = (artist: Artist): void => {
     console.log(tab, tab, artist.role);
     return;
   }
+
   console.log(tab, `${artist.name}: ${performingRoles.join(", ")}`);
   console.log(tab, tab, artist.role);
   return;
@@ -37,6 +38,8 @@ const getArtistsDataFromMasterId = async (master_id: number) => {
   const release_id = master.main_release;
   const release = await fetchRelease(release_id);
 
+  console.log("data_quality:", release.data_quality);
+
   console.log("Artists:");
   for (const artist of release.artists) {
     logArtistRole(artist);
@@ -49,14 +52,14 @@ const getArtistsDataFromMasterId = async (master_id: number) => {
 };
 
 const main = () => {
-  const readline = require("readline").createInterface({
+  const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
   });
 
-  readline.question("Input Master ID: ", (input: string) => {
+  rl.question("Input Master ID: ", (input: string) => {
     const master_id = Number(input);
-    readline.close();
+    rl.close();
     getArtistsDataFromMasterId(master_id);
   });
 };
