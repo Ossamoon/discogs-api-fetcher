@@ -1,7 +1,8 @@
 import * as readline from "readline";
-import { fetchMaster, fetchRelease } from "./fetch";
-import { getPerformingRoles } from "./check";
+import { fetchMaster, fetchRelease, search } from "./fetch";
+import { getPerformingRoles, getRoles, getUnknownRoles } from "./check";
 import { Artist } from "./types";
+import { sleep } from "./lib";
 
 const logArtistRole = (artist: Artist): void => {
   const tab = `  `;
@@ -28,49 +29,87 @@ const logArtistRole = (artist: Artist): void => {
   return;
 };
 
-const getArtistsDataFromMasterId = async (master_id: number) => {
+const getArtistsDataFromMasterId = async (
+  master_id: number
+): Promise<Artist[] | undefined> => {
   const master = await fetchMaster(master_id);
-
-  console.log("id: ", master.id);
-  console.log("title: ", master.title);
-  console.log("main_release: ", master.main_release);
-
-  const release_id = master.main_release;
-  const release = await fetchRelease(release_id);
-
-  console.log("data_quality:", release.data_quality);
+  const main_release = await fetchRelease(master.main_release);
 
   if (
-    release.formats.some((format) =>
+    main_release.formats.some((format) =>
       format.descriptions.includes("Compilation")
     )
   ) {
-    console.log("This is compilation album!!");
-    return;
+    return undefined;
   }
 
-  console.log("Artists:");
-  for (const artist of release.artists) {
-    logArtistRole(artist);
-  }
-
-  console.log("ExtraArtists:");
-  for (const artist of release.extraartists) {
-    logArtistRole(artist);
-  }
+  return main_release.extraartists;
 };
 
-const main = () => {
-  const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout,
-  });
-
-  rl.question("Input Master ID: ", (input: string) => {
-    const master_id = Number(input);
-    rl.close();
-    getArtistsDataFromMasterId(master_id);
-  });
+const searchJazzMasters = async (page: number) => {
+  const data = await search(page, "", "master", "Jazz", "Bop");
+  return {
+    masters: data.results.map((v) => ({
+      id: v.id,
+      title: v.title,
+    })),
+    pages: data.pagination.pages,
+  };
 };
 
-main();
+const main = async () => {
+  let page: number = 1;
+  let unknownSet = new Set();
+
+  while (true) {
+    console.log(`Page ${page}`);
+    const { masters, pages } = await searchJazzMasters(page);
+
+    for (const master of masters) {
+      await sleep(3000);
+      console.log();
+      console.log(`${master.title} [id=${master.id}]`);
+
+      const artists = await getArtistsDataFromMasterId(master.id);
+      if (artists === undefined) {
+        console.log("Compilation Album.");
+        continue;
+      }
+      if (artists.length < 2) {
+        console.log("Credit doesn't have several artists.");
+        continue;
+      }
+
+      for (const artist of artists) {
+        const roles = getRoles(artist);
+        console.log(artist.name, roles);
+
+        const unknownRoles = getUnknownRoles(roles);
+        if (unknownRoles.length !== 0) {
+          console.warn(`Unknown Role: ${unknownRoles}`);
+          unknownRoles.forEach((role) => {
+            unknownSet.add(role);
+          });
+        }
+      }
+    }
+
+    if (page >= pages) {
+      break;
+    } else {
+      page++;
+    }
+  }
+
+  console.log(unknownSet);
+};
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+rl.question("Return to start: ", () => {
+  rl.close();
+  main();
+});

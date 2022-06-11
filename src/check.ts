@@ -108,6 +108,18 @@ const nonPerformerRoles: string[] = [
   "Remastered By",
 ];
 
+export const getUnknownRoles = (roles: string[]): string[] => {
+  const roleList = performerRoles.concat(nonPerformerRoles);
+  return roles.filter((role) => roleList.includes(role) === false);
+};
+
+export const getRoles = (artist: Artist): string[] => {
+  return artist.role
+    .replace(/\[[^\[\]]*\]/g, "")
+    .split(",")
+    .map((str) => str.trim());
+};
+
 export const getPerformingRoles = (artist: Artist): string[] | undefined => {
   const roles = artist.role
     .replace(/\[[^\[\]]*\]/g, "")

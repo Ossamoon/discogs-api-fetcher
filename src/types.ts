@@ -74,3 +74,14 @@ export type Identifier = {
   type: string;
   value: string;
 };
+
+export type Pagination = {
+  per_page: number;
+  pages: number;
+  page: number;
+  urls: {
+    last: string;
+    next: string;
+  };
+  items: number;
+};
