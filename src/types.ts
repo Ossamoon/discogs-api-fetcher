@@ -65,9 +65,9 @@ export type Track = {
 };
 
 export type Format = {
-  descriptions: string[];
-  name: string;
-  qty: string;
+  descriptions?: string[];
+  name?: string;
+  qty?: string;
 };
 
 export type Identifier = {

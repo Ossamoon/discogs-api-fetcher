@@ -45,20 +45,26 @@ export const fetchRelease = async (
   return data;
 };
 
-export type searchResponse = {
+export type searchMasterResponse = {
   pagination: Pagination;
-  results: { id: number; title: string }[];
+  results: {
+    id: number;
+    title: string;
+    year: number;
+    uri: string;
+    thumb: string;
+    cover_image: string;
+  }[];
 };
 
-export const search = async (
+export const searchMaster = async (
   page: number,
   query: string,
-  type?: "release" | "master" | "artist" | "label",
   genre?: string,
   style?: string,
   artist?: string,
   credit?: string
-): Promise<searchResponse> => {
+): Promise<searchMasterResponse> => {
   const options: AxiosRequestConfig = {
     url: `https://api.discogs.com/database/search?${
       !query ? "" : `q=${query}`
@@ -66,12 +72,13 @@ export const search = async (
     responseType: "json",
     params: {
       q: query,
-      type: type,
+      type: "master",
       genre: genre,
       style: style,
       artist: artist,
       credit: credit,
       page: page,
+      per_page: 100,
     },
     headers: {
       Authorization: `Discogs key=${api_key}, secret=${api_secret}`,
