@@ -1,5 +1,5 @@
 import axios, { AxiosRequestConfig, AxiosResponse, AxiosError } from "axios";
-import { MasterData, ReleaseData, Pagination } from "./types";
+import { MasterData, ReleaseData, Pagination, Artist } from "./types";
 
 require("dotenv").config();
 const api_key: string | undefined = process.env.API_KEY;
@@ -92,4 +92,21 @@ export const searchMaster = async (
   } catch (err) {
     throw err;
   }
+};
+
+export const getArtistsDataFromMasterId = async (
+  master_id: number
+): Promise<[boolean, ...Artist[]]> => {
+  const master = await fetchMaster(master_id);
+  const main_release = await fetchRelease(master.main_release);
+
+  if (
+    main_release.formats.some((format) =>
+      format?.descriptions?.includes("Compilation")
+    )
+  ) {
+    return [true];
+  }
+
+  return [false, ...main_release.extraartists];
 };

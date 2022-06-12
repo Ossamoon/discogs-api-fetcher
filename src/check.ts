@@ -156,3 +156,18 @@ export const getPerformingRoles = (artist: Artist): string[] | undefined => {
   }
   return undefined;
 };
+
+export const attachTagToRole = (
+  role: string
+):
+  | { tag: "performer"; role: string }
+  | { tag: "non_performer"; role: string }
+  | { tag: "unknown"; role: string } => {
+  if (performerRoles.includes(role)) {
+    return { tag: "performer", role: role };
+  }
+  if (nonPerformerRoles.includes(role)) {
+    return { tag: "non_performer", role: role };
+  }
+  return { tag: "unknown", role: role };
+};

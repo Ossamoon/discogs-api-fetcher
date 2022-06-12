@@ -20,6 +20,9 @@ export const readMastersFromCSV = async (): Promise<MasterForm[]> => {
     if (i === 0) {
       continue;
     }
+    if (lines[i].trim() === "") {
+      continue;
+    }
     const [id, title, year, url, thumb_image, cover_image, status] =
       lines[i].split(DELIMITER);
     masters.push({ id, title, year, url, thumb_image, cover_image, status });
@@ -105,5 +108,5 @@ export const writeArtistToMasterFromCSV = async (
   for (const { artist_id, master_id, roles } of artistToMaster) {
     data += [artist_id, master_id, ...roles].join(DELIMITER) + "\n";
   }
-  await writeFile("./artists.csv", data, { encoding: "utf-8" });
+  await writeFile("./artistToMaster.csv", data, { encoding: "utf-8" });
 };
