@@ -1,8 +1,12 @@
-import { createArtistDatabase, createMasterDatabase } from "./createCSV";
+import {
+  createArtistDatabase,
+  createMasterDatabase,
+  createConnectionDatabase,
+} from "./createCSV";
 import { createGEXFfromCSV } from "./createGEXF";
 
 const main = async () => {
-  await createGEXFfromCSV();
+  await createConnectionDatabase();
 };
 
 main();

@@ -1,17 +1,21 @@
 import { searchMaster, getArtistsDataFromMasterId } from "./fetch";
 import {
   ArtistForm,
+  ArtistToArtistForm,
   ArtistToMasterForm,
   MasterForm,
-  writeArtistToMasterFromCSV,
-} from "./filemanage";
+  readArtistToMasterFromCSV,
+  writeArtistToArtistToCSV,
+  writeArtistToMasterToCSV,
+} from "./manageCSV";
 import {
   readMastersFromCSV,
   writeMastersToCSV,
   writeArtistsToCSV,
-} from "./filemanage";
+} from "./manageCSV";
 import { sleep } from "./lib";
 import { Artist } from "./types";
+import { hasPerformingRole, splitRoles } from "./check";
 
 const QUERY = "";
 const GENRE = "Jazz";
@@ -110,5 +114,49 @@ export const createArtistDatabase = async () => {
 
   await writeMastersToCSV(masters);
   await writeArtistsToCSV([...artistMap.values()]);
-  await writeArtistToMasterFromCSV([...artist2masterMap.values()]);
+  await writeArtistToMasterToCSV([...artist2masterMap.values()]);
+};
+
+export const createConnectionDatabase = async () => {
+  const masters = await readMastersFromCSV();
+  const artist2master = await readArtistToMasterFromCSV();
+  let artist2artistMap = new Map<number, ArtistToArtistForm>();
+
+  for (const master of masters) {
+    const master_id = master.id;
+    const joinedArtistIDs = artist2master
+      .filter((v) => v.master_id === master_id)
+      .filter((v) => hasPerformingRole(splitRoles(v.roles)))
+      .map((v) => v.artist_id);
+
+    for (let i = 0; i < joinedArtistIDs.length; i++) {
+      for (let j = i + 1; j < joinedArtistIDs.length; j++) {
+        const [id_min, id_max] = [
+          Number(joinedArtistIDs[i]),
+          Number(joinedArtistIDs[j]),
+        ].sort((a, b) => a - b);
+        if (id_min === id_max) {
+          throw new Error("Multiple same id's on one master " + master_id);
+        }
+        const key = id_max * 1000000000 + id_min;
+        const reserved = artist2artistMap.get(key);
+        if (reserved === undefined) {
+          artist2artistMap.set(key, {
+            id_min: String(id_min),
+            id_max: String(id_max),
+            masters: master_id,
+          });
+        } else {
+          const { masters } = reserved;
+          artist2artistMap.set(key, {
+            id_min: String(id_min),
+            id_max: String(id_max),
+            masters: masters + "," + master_id,
+          });
+        }
+      }
+    }
+  }
+
+  await writeArtistToArtistToCSV([...artist2artistMap.values()]);
 };

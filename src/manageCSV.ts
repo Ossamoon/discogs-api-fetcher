@@ -107,7 +107,7 @@ export const readArtistToMasterFromCSV = async (): Promise<
   return a2m;
 };
 
-export const writeArtistToMasterFromCSV = async (
+export const writeArtistToMasterToCSV = async (
   artistToMaster: ArtistToMasterForm[]
 ) => {
   let data = ["artist_id", "master_id", "roles"].join(DELIMITER) + "\n";
@@ -115,4 +115,39 @@ export const writeArtistToMasterFromCSV = async (
     data += [artist_id, master_id, roles].join(DELIMITER) + "\n";
   }
   await writeFile("./artistToMaster.csv", data, { encoding: "utf-8" });
+};
+
+export type ArtistToArtistForm = {
+  id_min: string;
+  id_max: string;
+  masters: string;
+};
+
+export const readArtistToArtistFromCSV = async (): Promise<
+  ArtistToArtistForm[]
+> => {
+  const data = await readFile("./artistToArtist.csv", { encoding: "utf-8" });
+  const lines = data.split("\n");
+  let a2a: ArtistToArtistForm[] = [];
+  for (let i = 0; i < lines.length; i++) {
+    if (i === 0) {
+      continue;
+    }
+    if (lines[i].trim() === "") {
+      continue;
+    }
+    const [id_min, id_max, masters] = lines[i].split(DELIMITER);
+    a2a.push({ id_min, id_max, masters });
+  }
+  return a2a;
+};
+
+export const writeArtistToArtistToCSV = async (
+  artistToArtist: ArtistToArtistForm[]
+) => {
+  let data = ["id_min", "id_max", "masters"].join(DELIMITER) + "\n";
+  for (const { id_min, id_max, masters } of artistToArtist) {
+    data += [id_min, id_max, masters].join(DELIMITER) + "\n";
+  }
+  await writeFile("./artistToArtist.csv", data, { encoding: "utf-8" });
 };

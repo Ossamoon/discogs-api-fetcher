@@ -6,7 +6,7 @@ import {
   readArtistsFromCSV,
   readArtistToMasterFromCSV,
   readMastersFromCSV,
-} from "./filemanage";
+} from "./manageCSV";
 
 export const createGEXFfromCSV = async () => {
   const graph: Graph<{ label: string }, { weight: number }> = new Graph({
