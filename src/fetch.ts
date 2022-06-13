@@ -17,7 +17,7 @@ export const fetchMaster = async (master_id: number): Promise<MasterData> => {
       return data;
     })
     .catch((err: AxiosError) => {
-      console.error(err.message);
+      console.error("Error on fetch masters");
       throw err;
     });
 
@@ -38,7 +38,7 @@ export const fetchRelease = async (
       return data;
     })
     .catch((err: AxiosError) => {
-      console.error(err.message);
+      console.error("Error on fetch releases");
       throw err;
     });
 

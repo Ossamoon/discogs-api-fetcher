@@ -136,18 +136,23 @@ export const getUnknownRoles = (roles: string[]): string[] => {
   return roles.filter((role) => roleList.includes(role) === false);
 };
 
-export const getRoles = (artist: Artist): string[] => {
-  return artist.role
+export const hasPerformingRole = (roles: string[]): boolean => {
+  return intersection<string>(roles, performerRoles).length > 0;
+};
+
+export const splitRoles = (roles: string): string[] => {
+  return roles
     .replace(/\[[^\[\]]*\]/g, "")
     .split(",")
     .map((str) => str.trim());
 };
 
+export const getRoles = (artist: Artist): string[] => {
+  return splitRoles(artist.role);
+};
+
 export const getPerformingRoles = (artist: Artist): string[] | undefined => {
-  const roles = artist.role
-    .replace(/\[[^\[\]]*\]/g, "")
-    .split(",")
-    .map((str) => str.trim());
+  const roles = getRoles(artist);
   if (intersection<string>(roles, performerRoles).length > 0) {
     return intersection<string>(roles, performerRoles);
   }

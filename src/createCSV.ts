@@ -1,4 +1,3 @@
-import { getRoles } from "./check";
 import { searchMaster, getArtistsDataFromMasterId } from "./fetch";
 import {
   ArtistForm,
@@ -12,6 +11,7 @@ import {
   writeArtistsToCSV,
 } from "./filemanage";
 import { sleep } from "./lib";
+import { Artist } from "./types";
 
 const QUERY = "";
 const GENRE = "Jazz";
@@ -21,7 +21,7 @@ export const createMasterDatabase = async () => {
   let page: number = 1;
   let masters: MasterForm[] = [];
 
-  while (page < 3) {
+  while (page < 2) {
     // Search by genre and style.
     const { results, pagination } = await searchMaster(
       page,
@@ -58,15 +58,14 @@ export const createMasterDatabase = async () => {
 };
 
 export const createArtistDatabase = async () => {
-  // Get master data from CSV file.
-  let masters: MasterForm[] = await readMastersFromCSV();
+  let masters: MasterForm[] = await readMastersFromCSV(); // Get master data from CSV file.
   let artistMap = new Map<number, ArtistForm>();
-  let artist2master: ArtistToMasterForm[] = [];
+  let artist2masterMap = new Map<number, ArtistToMasterForm>();
 
   for (let i = 0; i < masters.length; i++) {
     const master_id = Number(masters[i].id);
     console.log(`${i + 1}/${masters.length} id=${master_id}`);
-    await sleep(5500);
+    await sleep(5000);
     const [isCompilation, ...artists] = await getArtistsDataFromMasterId(
       master_id
     );
@@ -90,15 +89,26 @@ export const createArtistDatabase = async () => {
         url: artist.resource_url,
       });
 
-      artist2master.push({
-        artist_id: String(artist.id),
-        master_id: String(master_id),
-        roles: getRoles(artist),
-      });
+      const keyNum = artist.id * 1000000000 + master_id;
+      const reserved = artist2masterMap.get(keyNum);
+      if (reserved === undefined) {
+        artist2masterMap.set(keyNum, {
+          artist_id: String(artist.id),
+          master_id: String(master_id),
+          roles: artist.role,
+        });
+      } else {
+        const { roles } = reserved;
+        artist2masterMap.set(keyNum, {
+          artist_id: String(artist.id),
+          master_id: String(master_id),
+          roles: roles + ", " + artist.role,
+        });
+      }
     });
   }
 
   await writeMastersToCSV(masters);
   await writeArtistsToCSV([...artistMap.values()]);
-  await writeArtistToMasterFromCSV(artist2master);
+  await writeArtistToMasterFromCSV([...artist2masterMap.values()]);
 };

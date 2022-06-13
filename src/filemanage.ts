@@ -65,6 +65,9 @@ export const readArtistsFromCSV = async (): Promise<ArtistForm[]> => {
     if (i === 0) {
       continue;
     }
+    if (lines[i].trim() === "") {
+      continue;
+    }
     const [id, name, url] = lines[i].split(DELIMITER);
     artists.push({ id, name, url });
   }
@@ -82,7 +85,7 @@ export const writeArtistsToCSV = async (artists: ArtistForm[]) => {
 export type ArtistToMasterForm = {
   artist_id: string;
   master_id: string;
-  roles: string[];
+  roles: string;
 };
 
 export const readArtistToMasterFromCSV = async (): Promise<
@@ -91,11 +94,14 @@ export const readArtistToMasterFromCSV = async (): Promise<
   const data = await readFile("./artistToMaster.csv", { encoding: "utf-8" });
   const lines = data.split("\n");
   let a2m: ArtistToMasterForm[] = [];
-  for (let i = 0; i < a2m.length; i++) {
+  for (let i = 0; i < lines.length; i++) {
     if (i === 0) {
       continue;
     }
-    const [artist_id, master_id, ...roles] = lines[i].split(DELIMITER);
+    if (lines[i].trim() === "") {
+      continue;
+    }
+    const [artist_id, master_id, roles] = lines[i].split(DELIMITER);
     a2m.push({ artist_id, master_id, roles });
   }
   return a2m;
@@ -106,7 +112,7 @@ export const writeArtistToMasterFromCSV = async (
 ) => {
   let data = ["artist_id", "master_id", "roles"].join(DELIMITER) + "\n";
   for (const { artist_id, master_id, roles } of artistToMaster) {
-    data += [artist_id, master_id, ...roles].join(DELIMITER) + "\n";
+    data += [artist_id, master_id, roles].join(DELIMITER) + "\n";
   }
   await writeFile("./artistToMaster.csv", data, { encoding: "utf-8" });
 };

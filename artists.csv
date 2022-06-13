@@ -25,13 +25,6 @@ id|name|url
 260721|Barry Galbraith|https://api.discogs.com/artists/260721
 259083|Richie Powell|https://api.discogs.com/artists/259083
 259082|Clifford Brown|https://api.discogs.com/artists/259082
-135930|Sonny Stitt|https://api.discogs.com/artists/135930
-252998|Ray Brown|https://api.discogs.com/artists/252998
-263097|Stan Levey|https://api.discogs.com/artists/263097
-256065|Herb Ellis|https://api.discogs.com/artists/256065
-267675|John Lewis (2)|https://api.discogs.com/artists/267675
-30486|Stan Getz|https://api.discogs.com/artists/30486
-64694|Dizzy Gillespie|https://api.discogs.com/artists/64694
 307700|Eddie Jones|https://api.discogs.com/artists/307700
 228917|Kenny Clarke|https://api.discogs.com/artists/228917
 10096|Frank Wess|https://api.discogs.com/artists/10096
@@ -66,18 +59,6 @@ id|name|url
 427125|Teddy Kotick|https://api.discogs.com/artists/427125
 339536|Nick Stabulas|https://api.discogs.com/artists/339536
 320757|John Williams (5)|https://api.discogs.com/artists/320757
-327018|Ernie Henry|https://api.discogs.com/artists/327018
-259075|Curly Russell|https://api.discogs.com/artists/259075
-251780|Tommy Potter|https://api.discogs.com/artists/251780
-753374|Chino Pozo|https://api.discogs.com/artists/753374
-255556|Roy Haynes|https://api.discogs.com/artists/255556
-29992|Bud Powell|https://api.discogs.com/artists/29992
-251783|Tadd Dameron|https://api.discogs.com/artists/251783
-267185|Allen Eager|https://api.discogs.com/artists/267185
-145264|Sonny Rollins|https://api.discogs.com/artists/145264
-272019|Wardell Gray|https://api.discogs.com/artists/272019
-309986|Fats Navarro|https://api.discogs.com/artists/309986
-272026|Howard McGhee|https://api.discogs.com/artists/272026
 251873|Art Pepper|https://api.discogs.com/artists/251873
 257423|George Mraz|https://api.discogs.com/artists/257423
 299481|John Koenig|https://api.discogs.com/artists/299481
@@ -102,6 +83,7 @@ id|name|url
 1782446|A. David Hogarth|https://api.discogs.com/artists/1782446
 3356700|Paul Minsart|https://api.discogs.com/artists/3356700
 443973|Valerie Wilmer|https://api.discogs.com/artists/443973
+29992|Bud Powell|https://api.discogs.com/artists/29992
 332286|Alan Bates|https://api.discogs.com/artists/332286
 239566|Jef Gilson|https://api.discogs.com/artists/239566
 349804|Curtis Lundy|https://api.discogs.com/artists/349804
@@ -133,21 +115,6 @@ id|name|url
 302492|Roy Frazee|https://api.discogs.com/artists/302492
 298943|Bobby Jaspar|https://api.discogs.com/artists/298943
 251778|J.J. Johnson|https://api.discogs.com/artists/251778
-2364636|Doris Parker|https://api.discogs.com/artists/2364636
-499210|Aubrey Mayhew|https://api.discogs.com/artists/499210
-319761|Sonny Criss|https://api.discogs.com/artists/319761
-318746|Willie Smith (2)|https://api.discogs.com/artists/318746
-1889523|Florette Bihari|https://api.discogs.com/artists/1889523
-330699|Johnny Miller (2)|https://api.discogs.com/artists/330699
-272014|Red Callender|https://api.discogs.com/artists/272014
-327625|Jackie Mills|https://api.discogs.com/artists/327625
-353291|Louis Bellson|https://api.discogs.com/artists/353291
-312535|Oscar Moore|https://api.discogs.com/artists/312535
-1914573|William Claxton|https://api.discogs.com/artists/1914573
-272018|Dodo Marmarosa|https://api.discogs.com/artists/272018
-355|Unknown Artist|
-265683|Charlie Shavers|https://api.discogs.com/artists/265683
-306398|Red Norvo|https://api.discogs.com/artists/306398
 335496|Hal McKusick|https://api.discogs.com/artists/335496
 259092|Lee Konitz|https://api.discogs.com/artists/259092
 547169|Sheldon Marks|https://api.discogs.com/artists/547169
@@ -159,21 +126,6 @@ id|name|url
 252310|Bill Evans|https://api.discogs.com/artists/252310
 547173|Ted Brown|https://api.discogs.com/artists/547173
 259089|Warne Marsh|https://api.discogs.com/artists/259089
-713983|Wessell Anderson|https://api.discogs.com/artists/713983
-1597351|Josephine Didonato|https://api.discogs.com/artists/1597351
-2256650|Romare Bearden|https://api.discogs.com/artists/2256650
-253758|Reginald Veal|https://api.discogs.com/artists/253758
-253762|Herlin Riley|https://api.discogs.com/artists/253762
-161744|Mark Wilder|https://api.discogs.com/artists/161744
-390251|Dennis Ferrante|https://api.discogs.com/artists/390251
-403086|Tim Geelan|https://api.discogs.com/artists/403086
-251849|George Butler|https://api.discogs.com/artists/251849
-268347|Stanley Crouch|https://api.discogs.com/artists/268347
-2256649|Frank Stewart (2)|https://api.discogs.com/artists/2256649
-253237|Marcus Roberts|https://api.discogs.com/artists/253237
-270266|Steve Epstein|https://api.discogs.com/artists/270266
-253759|Todd Williams|https://api.discogs.com/artists/253759
-253392|Wynton Marsalis|https://api.discogs.com/artists/253392
 194757|Allen Hoist|https://api.discogs.com/artists/194757
 388491|Lee Smith (3)|https://api.discogs.com/artists/388491
 79342|Mongo Santamaria|https://api.discogs.com/artists/79342
@@ -185,24 +137,8 @@ id|name|url
 1475514|Ileana Mesa|https://api.discogs.com/artists/1475514
 14048|Milton Hamilton|https://api.discogs.com/artists/14048
 849328|Doug Harris|https://api.discogs.com/artists/849328
+64694|Dizzy Gillespie|https://api.discogs.com/artists/64694
 1397656|Tommy Villariny|https://api.discogs.com/artists/1397656
-2513853|John Sellards|https://api.discogs.com/artists/2513853
-261400|Pepper Adams|https://api.discogs.com/artists/261400
-11146313|Alex Kachmar|https://api.discogs.com/artists/11146313
-2942788|Tom Doran|https://api.discogs.com/artists/2942788
-8394525|Sharon McInnis|https://api.discogs.com/artists/8394525
-5588514|Bob Cairns|https://api.discogs.com/artists/5588514
-9935164|Jim Radzion|https://api.discogs.com/artists/9935164
-3809544|Frank Basile (2)|https://api.discogs.com/artists/3809544
-1198608|Cory Weeds|https://api.discogs.com/artists/1198608
-312098|Kevin Gray|https://api.discogs.com/artists/312098
-4095225|Gary Carner|https://api.discogs.com/artists/4095225
-303420|Gary Smulyan|https://api.discogs.com/artists/303420
-2417380|David Spitzer|https://api.discogs.com/artists/2417380
-2682459|Tommy Banks|https://api.discogs.com/artists/2682459
-2117313|Marc Vasey|https://api.discogs.com/artists/2117313
-816269|Andre White|https://api.discogs.com/artists/816269
-1865288|Jamie Anstey|https://api.discogs.com/artists/1865288
 252821|Keter Betts|https://api.discogs.com/artists/252821
 272667|Bobby Durham|https://api.discogs.com/artists/272667
 253443|Tommy Flanagan|https://api.discogs.com/artists/253443
@@ -215,14 +151,19 @@ id|name|url
 332585|Al Lucas|https://api.discogs.com/artists/332585
 251776|Gene Ramey|https://api.discogs.com/artists/251776
 263795|Leonard Gaskin|https://api.discogs.com/artists/263795
+267675|John Lewis (2)|https://api.discogs.com/artists/267675
+145264|Sonny Rollins|https://api.discogs.com/artists/145264
 888685|Lloyd Buchann|https://api.discogs.com/artists/888685
 261974|Wendell Marshall|https://api.discogs.com/artists/261974
 821722|Kalil Madi|https://api.discogs.com/artists/821722
 636002|Walter Bolden|https://api.discogs.com/artists/636002
 888684|Eddie Wright|https://api.discogs.com/artists/888684
+2364636|Doris Parker|https://api.discogs.com/artists/2364636
 2858696|Hal Sussman|https://api.discogs.com/artists/2858696
 480264|Sadik Hakim|https://api.discogs.com/artists/480264
+499210|Aubrey Mayhew|https://api.discogs.com/artists/499210
 255109|Johnny Coles|https://api.discogs.com/artists/255109
+252998|Ray Brown|https://api.discogs.com/artists/252998
 361530|Tony Dumas|https://api.discogs.com/artists/361530
 3012275|Kevin Johnson (19)|https://api.discogs.com/artists/3012275
 377527|Dennis Sands|https://api.discogs.com/artists/377527
@@ -242,10 +183,6 @@ id|name|url
 254944|Esmond Edwards|https://api.discogs.com/artists/254944
 1515566|Bill Leslie|https://api.discogs.com/artists/1515566
 824909|Phineas Newborn Jr.|https://api.discogs.com/artists/824909
-292995|John Ore|https://api.discogs.com/artists/292995
-463696|Elmo Hope|https://api.discogs.com/artists/463696
-259076|Frank Foster|https://api.discogs.com/artists/259076
-1202068|Freeman Lee|https://api.discogs.com/artists/1202068
 1116274|Bob Defrin|https://api.discogs.com/artists/1116274
 267719|John Clayton|https://api.discogs.com/artists/267719
 271155|Mickey Roker|https://api.discogs.com/artists/271155
@@ -257,19 +194,6 @@ id|name|url
 296954|Roger Kellaway|https://api.discogs.com/artists/296954
 263796|Zoot Sims|https://api.discogs.com/artists/263796
 258469|Harry Edison|https://api.discogs.com/artists/258469
-265390|Mel Lewis|https://api.discogs.com/artists/265390
-271154|Thad Jones|https://api.discogs.com/artists/271154
-202256|Sonny Lester|https://api.discogs.com/artists/202256
-136013|Ruth Brown|https://api.discogs.com/artists/136013
-339954|Spanky DeBrest|https://api.discogs.com/artists/339954
-1838307|Ken Deardoff|https://api.discogs.com/artists/1838307
-312641|Albert Heath|https://api.discogs.com/artists/312641
-554176|Bill Stoddard|https://api.discogs.com/artists/554176
-254946|Orrin Keepnews|https://api.discogs.com/artists/254946
-403479|Jack Matthews|https://api.discogs.com/artists/403479
-2182577|Lawrence N. Shustak|https://api.discogs.com/artists/2182577
-61585|Cannonball Adderley|https://api.discogs.com/artists/61585
-264626|Clifford Jordan|https://api.discogs.com/artists/264626
 2794799|Dave Jackson (15)|https://api.discogs.com/artists/2794799
 4099|Bobby Broom|https://api.discogs.com/artists/4099
 30184|Kenny Burrell|https://api.discogs.com/artists/30184
@@ -299,6 +223,7 @@ id|name|url
 1926489|Lucinda Cowell|https://api.discogs.com/artists/1926489
 265354|Shelly Manne|https://api.discogs.com/artists/265354
 363563|Baker Bigsby|https://api.discogs.com/artists/363563
+254946|Orrin Keepnews|https://api.discogs.com/artists/254946
 61587|Howard Roberts|https://api.discogs.com/artists/61587
 2256957|Phil Bray|https://api.discogs.com/artists/2256957
 2389294|Gerard Holdgrefe|https://api.discogs.com/artists/2389294
@@ -315,12 +240,17 @@ id|name|url
 727352|Fred Ford|https://api.discogs.com/artists/727352
 261379|Michael Allen (2)|https://api.discogs.com/artists/261379
 322131|Clyde Lombardi|https://api.discogs.com/artists/322131
+259075|Curly Russell|https://api.discogs.com/artists/259075
 29977|Art Blakey|https://api.discogs.com/artists/29977
 263096|Don Lamond|https://api.discogs.com/artists/263096
 2605757|Harry Biss|https://api.discogs.com/artists/2605757
+251780|Tommy Potter|https://api.discogs.com/artists/251780
 817144|Paul Bacon (2)|https://api.discogs.com/artists/817144
+255556|Roy Haynes|https://api.discogs.com/artists/255556
+309986|Fats Navarro|https://api.discogs.com/artists/309986
 349615|Charles McPherson|https://api.discogs.com/artists/349615
 272340|Nelson Boyd|https://api.discogs.com/artists/272340
+312641|Albert Heath|https://api.discogs.com/artists/312641
 277632|Barry Harris (2)|https://api.discogs.com/artists/277632
 41401|Carmell Jones|https://api.discogs.com/artists/41401
 1995656|Kent Judkins|https://api.discogs.com/artists/1995656
@@ -354,11 +284,6 @@ id|name|url
 266539|Nils Winther|https://api.discogs.com/artists/266539
 261286|Al Cohn|https://api.discogs.com/artists/261286
 253066|Jimmy Knepper|https://api.discogs.com/artists/253066
-363532|Gene Quill|https://api.discogs.com/artists/363532
-416672|Sol Schlinger|https://api.discogs.com/artists/416672
-1488946|Burgher Jones|https://api.discogs.com/artists/1488946
-3825818|Clare Romano Ross|https://api.discogs.com/artists/3825818
-296959|Dave McKenna|https://api.discogs.com/artists/296959
 2029538|Arnold Saks|https://api.discogs.com/artists/2029538
 2320874|Robert Andrew Parker|https://api.discogs.com/artists/2320874
 261287|George Wallington|https://api.discogs.com/artists/261287
@@ -383,18 +308,19 @@ id|name|url
 913030|John Nielson|https://api.discogs.com/artists/913030
 501234|Frank Socolow|https://api.discogs.com/artists/501234
 256168|Red Mitchell|https://api.discogs.com/artists/256168
+263097|Stan Levey|https://api.discogs.com/artists/263097
 463465|Ralph J. Gleason|https://api.discogs.com/artists/463465
 265385|Jimmy Rowles|https://api.discogs.com/artists/265385
 312553|Bill Harris|https://api.discogs.com/artists/312553
-251875|Leroy Vinnegar|https://api.discogs.com/artists/251875
-285956|Lou Levy|https://api.discogs.com/artists/285956
 256091|Sam Jones|https://api.discogs.com/artists/256091
 271001|Al Foster|https://api.discogs.com/artists/271001
 341960|Freddy Hansson|https://api.discogs.com/artists/341960
 431775|Chuck Irwin|https://api.discogs.com/artists/431775
 1889021|Per Grunnet|https://api.discogs.com/artists/1889021
 3260248|Thorbjørn Sjøgren|https://api.discogs.com/artists/3260248
+251875|Leroy Vinnegar|https://api.discogs.com/artists/251875
 255897|Bones Howe|https://api.discogs.com/artists/255897
+1914573|William Claxton|https://api.discogs.com/artists/1914573
 1049153|Joe Castro|https://api.discogs.com/artists/1049153
 266425|Teddy Edwards|https://api.discogs.com/artists/266425
 285394|Ray Warleigh|https://api.discogs.com/artists/285394
@@ -418,304 +344,69 @@ id|name|url
 307543|Bill Goodwin|https://api.discogs.com/artists/307543
 569584|Ed Rak|https://api.discogs.com/artists/569584
 757794|Gene Curtis|https://api.discogs.com/artists/757794
+202256|Sonny Lester|https://api.discogs.com/artists/202256
 1328668|Tom Ueno|https://api.discogs.com/artists/1328668
 1849553|Masamichi Okazaki|https://api.discogs.com/artists/1849553
 2267918|Shigeru Uchiyama|https://api.discogs.com/artists/2267918
 455255|Hal Galper|https://api.discogs.com/artists/455255
 297675|Tom Harrell|https://api.discogs.com/artists/297675
 258701|Benny Carter|https://api.discogs.com/artists/258701
+61585|Cannonball Adderley|https://api.discogs.com/artists/61585
 599630|Chuck Lampkin|https://api.discogs.com/artists/599630
 258702|Jo Jones|https://api.discogs.com/artists/258702
 1830231|Roy DeCarava|https://api.discogs.com/artists/1830231
 23165|Lalo Schifrin|https://api.discogs.com/artists/23165
 251769|Coleman Hawkins|https://api.discogs.com/artists/251769
 255563|Don Byas|https://api.discogs.com/artists/255563
+30486|Stan Getz|https://api.discogs.com/artists/30486
 258459|Roy Eldridge|https://api.discogs.com/artists/258459
 254975|Joe Benjamin|https://api.discogs.com/artists/254975
 295642|Charlie Persip|https://api.discogs.com/artists/295642
 1637286|Joe Goldberg|https://api.discogs.com/artists/1637286
 218046|Junior Mance|https://api.discogs.com/artists/218046
-2641933|Milton Shaw|https://api.discogs.com/artists/2641933
-255945|Bud Shank|https://api.discogs.com/artists/255945
-284525|Kirk Felton|https://api.discogs.com/artists/284525
-4079629|Justin Stone (5)|https://api.discogs.com/artists/4079629
-809807|Zan Stewart|https://api.discogs.com/artists/809807
-258088|Gigi Gryce|https://api.discogs.com/artists/258088
-254079|Mads Vinding|https://api.discogs.com/artists/254079
-1947132|Gerd Huss|https://api.discogs.com/artists/1947132
-376280|Allan Ganley|https://api.discogs.com/artists/376280
-2624194|Andreas Brunner-Schwer|https://api.discogs.com/artists/2624194
-65755|Larry Gales|https://api.discogs.com/artists/65755
-254073|Ben Riley|https://api.discogs.com/artists/254073
-1713828|Robert Levin (2)|https://api.discogs.com/artists/1713828
-272685|Eddie "Lockjaw" Davis|https://api.discogs.com/artists/272685
-525240|Torbjörn Hultcrantz|https://api.discogs.com/artists/525240
-2358443|Abbe Johansson|https://api.discogs.com/artists/2358443
-411402|Sune Spångberg|https://api.discogs.com/artists/411402
-1838204|Chris Sheridan|https://api.discogs.com/artists/1838204
-1308822|Nils Edström|https://api.discogs.com/artists/1308822
-2358444|Kirsten Malone|https://api.discogs.com/artists/2358444
-2358445|Bengt Strånge|https://api.discogs.com/artists/2358445
-518869|Lennie Bush|https://api.discogs.com/artists/518869
-382099|Lloyd Thompson (2)|https://api.discogs.com/artists/382099
-1098894|Phil Seamen|https://api.discogs.com/artists/1098894
-746391|Dave Goldberg (2)|https://api.discogs.com/artists/746391
-1972725|Johnny Weed|https://api.discogs.com/artists/1972725
-413178|Terry Shannon|https://api.discogs.com/artists/413178
-292020|Dizzy Reece|https://api.discogs.com/artists/292020
-595653|Frankie Dunlop|https://api.discogs.com/artists/595653
-145256|Thelonious Monk|https://api.discogs.com/artists/145256
-2764836|Bill Grauer Productions, Inc.|https://api.discogs.com/artists/2764836
-216498|Charlie Rouse|https://api.discogs.com/artists/216498
-235322|Bob Belden|https://api.discogs.com/artists/235322
-303415|Jon Shapiro|https://api.discogs.com/artists/303415
-1889236|Darcy Cloutier-Fernald|https://api.discogs.com/artists/1889236
-303407|Lynn Seaton|https://api.discogs.com/artists/303407
-303411|Steve Kirby|https://api.discogs.com/artists/303411
-303412|James Riggs|https://api.discogs.com/artists/303412
-303413|Paquito D'Rivera|https://api.discogs.com/artists/303413
-290370|Howard Johnson (3)|https://api.discogs.com/artists/290370
-577649|Dennis Mackrel|https://api.discogs.com/artists/577649
-303418|Yoron Israel|https://api.discogs.com/artists/303418
-282077|Jim Anderson|https://api.discogs.com/artists/282077
-303419|Daniel Sadownick|https://api.discogs.com/artists/303419
-2033401|Patricia Steur|https://api.discogs.com/artists/2033401
-116605|Cyrus Chestnut|https://api.discogs.com/artists/116605
-2430024|John Campbell (18)|https://api.discogs.com/artists/2430024
-303414|Gary Giddins|https://api.discogs.com/artists/303414
-96443|Javon Jackson|https://api.discogs.com/artists/96443
-270862|Art Baron|https://api.discogs.com/artists/270862
-303409|Byron Stripling|https://api.discogs.com/artists/303409
-303421|Denise Jannah|https://api.discogs.com/artists/303421
-518831|Charles Pillow|https://api.discogs.com/artists/518831
-303416|Craig Handy|https://api.discogs.com/artists/303416
-303410|Dick Oatts|https://api.discogs.com/artists/303410
-292813|Lou Marini|https://api.discogs.com/artists/292813
-504698|Acy Lehman|https://api.discogs.com/artists/504698
-1832919|Dick Smith (9)|https://api.discogs.com/artists/1832919
-2266990|Nick Aristovulos|https://api.discogs.com/artists/2266990
-1655215|David B. Hecht|https://api.discogs.com/artists/1655215
-253353|Bob Thiele|https://api.discogs.com/artists/253353
-2134162|Hobco Arts|https://api.discogs.com/artists/2134162
-1750530|John Marlo|https://api.discogs.com/artists/1750530
-1839353|Pick Up Studios|https://api.discogs.com/artists/1839353
-606628|Gennaro Carone|https://api.discogs.com/artists/606628
-1678023|Lee Jeske|https://api.discogs.com/artists/1678023
-2247915|Mirko R. Boscolo|https://api.discogs.com/artists/2247915
-212002|Martial Solal|https://api.discogs.com/artists/212002
-358475|Giovanni Bonandrini|https://api.discogs.com/artists/358475
-2248577|Giuliano Crivelli|https://api.discogs.com/artists/2248577
-1636254|Max Harrison|https://api.discogs.com/artists/1636254
-774540|Elena Carminati|https://api.discogs.com/artists/774540
-338201|Tete Montoliu|https://api.discogs.com/artists/338201
-458340|Patrick Roques|https://api.discogs.com/artists/458340
-270054|Donald Bailey|https://api.discogs.com/artists/270054
-294752|Quentin Warren|https://api.discogs.com/artists/294752
-354751|Ron McMaster|https://api.discogs.com/artists/354751
-29981|Jimmy Smith|https://api.discogs.com/artists/29981
-252960|Michael Cuscuna|https://api.discogs.com/artists/252960
-552924|Helmut Kandlberger|https://api.discogs.com/artists/552924
-45671|Klaus Weiss|https://api.discogs.com/artists/45671
-2132857|Hans-Georg Dauzel|https://api.discogs.com/artists/2132857
-252017|René Thomas|https://api.discogs.com/artists/252017
-4118849|Heinz Lukas|https://api.discogs.com/artists/4118849
-299152|Ingfried Hoffmann|https://api.discogs.com/artists/299152
-251623|Pierre Michelot|https://api.discogs.com/artists/251623
-365297|Eric Peter|https://api.discogs.com/artists/365297
-322918|Daniel Humair|https://api.discogs.com/artists/322918
-59287|Barney Wilen|https://api.discogs.com/artists/59287
-303141|Peanuts Holland|https://api.discogs.com/artists/303141
-1201623|Picco Poccorni|https://api.discogs.com/artists/1201623
-267702|Mick Hannes|https://api.discogs.com/artists/267702
-205787|Walter Gerke|https://api.discogs.com/artists/205787
-804789|Jesper Lundgaard|https://api.discogs.com/artists/804789
-1060470|Aage Tanggaard|https://api.discogs.com/artists/1060470
-1413339|Doug Raney|https://api.discogs.com/artists/1413339
-919405|Ben Besiakov|https://api.discogs.com/artists/919405
-652824|David Stone Martin|https://api.discogs.com/artists/652824
-339516|Jimmy Raney|https://api.discogs.com/artists/339516
-1915387|John Hermansader|https://api.discogs.com/artists/1915387
-1027175|Lou Donaldson Quartet|https://api.discogs.com/artists/1027175
-1915386|Lou Donaldson Quintet|https://api.discogs.com/artists/1915386
-29973|Horace Silver|https://api.discogs.com/artists/29973
-29969|Blue Mitchell|https://api.discogs.com/artists/29969
-386834|Dave Matthews (3)|https://api.discogs.com/artists/386834
-1864624|Shigo Yamaguchi|https://api.discogs.com/artists/1864624
-253208|John Patitucci|https://api.discogs.com/artists/253208
-525096|Shigeyuki Kawashima|https://api.discogs.com/artists/525096
-4055168|Takuya Watanabe (2)|https://api.discogs.com/artists/4055168
-267102|Dave Weckl|https://api.discogs.com/artists/267102
-341954|Tom Jung|https://api.discogs.com/artists/341954
-476071|Troy Halderson|https://api.discogs.com/artists/476071
-264569|George Young (2)|https://api.discogs.com/artists/264569
-200766|Lew Soloff|https://api.discogs.com/artists/200766
-913758|Sonny Truitt|https://api.discogs.com/artists/913758
-23755|Miles Davis|https://api.discogs.com/artists/23755
-381506|John Simmons|https://api.discogs.com/artists/381506
-258089|Wilbur Ware|https://api.discogs.com/artists/258089
-387929|Jack Higgins|https://api.discogs.com/artists/387929
-4380482|Jane Grauer|https://api.discogs.com/artists/4380482
-2614966|Joe Knight (4)|https://api.discogs.com/artists/2614966
-343450|Bill Grauer|https://api.discogs.com/artists/343450
-295652|Matthew Gee|https://api.discogs.com/artists/295652
-254945|Kenny Dorham|https://api.discogs.com/artists/254945
-355880|Aladár Pege|https://api.discogs.com/artists/355880
-2906402|Manuela Preindl|https://api.discogs.com/artists/2906402
-59280|Charly Antolini|https://api.discogs.com/artists/59280
-893619|Andreas Burghardt|https://api.discogs.com/artists/893619
-1584729|SST (8)|https://api.discogs.com/artists/1584729
-2906403|Fern Mehring|https://api.discogs.com/artists/2906403
-1507894|Rudi Wilfer|https://api.discogs.com/artists/1507894
-755520|Andy Scherrer|https://api.discogs.com/artists/755520
+258367|Joe Fields|https://api.discogs.com/artists/258367
+57626|Bob Dorough|https://api.discogs.com/artists/57626
+1043095|Dan Morgenstern|https://api.discogs.com/artists/1043095
+315729|Sue Evans|https://api.discogs.com/artists/315729
+252610|Jaki Byard|https://api.discogs.com/artists/252610
+399141|Paul Goodman|https://api.discogs.com/artists/399141
+307498|Bobby Jones (2)|https://api.discogs.com/artists/307498
 252748|Butch Warren|https://api.discogs.com/artists/252748
-284700|Leo Wright|https://api.discogs.com/artists/284700
-373870|Bob Cunningham|https://api.discogs.com/artists/373870
+2053935|Mitsuru Yamada|https://api.discogs.com/artists/2053935
+595653|Frankie Dunlop|https://api.discogs.com/artists/595653
+2254115|Koichi Inakoshi|https://api.discogs.com/artists/2254115
+145256|Thelonious Monk|https://api.discogs.com/artists/145256
+216498|Charlie Rouse|https://api.discogs.com/artists/216498
+242087|Alec Dankworth|https://api.discogs.com/artists/242087
+253717|Paul Morgan|https://api.discogs.com/artists/253717
+264979|Steve White (3)|https://api.discogs.com/artists/264979
+362878|Paul Carr|https://api.discogs.com/artists/362878
+808892|David Newton (3)|https://api.discogs.com/artists/808892
+1400430|Christopher Jenkins|https://api.discogs.com/artists/1400430
+327296|Simon Morton|https://api.discogs.com/artists/327296
+53001|Steve Sidelnyk|https://api.discogs.com/artists/53001
+26453|The Jazz Renegades|https://api.discogs.com/artists/26453
+338116|Alan Barnes|https://api.discogs.com/artists/338116
+1553361|Julie-Ann Jones|https://api.discogs.com/artists/1553361
+362877|Paul Lacey|https://api.discogs.com/artists/362877
+1915387|John Hermansader|https://api.discogs.com/artists/1915387
+463696|Elmo Hope|https://api.discogs.com/artists/463696
+262160|George Duvivier|https://api.discogs.com/artists/262160
+2476102|Rolf Becker (6)|https://api.discogs.com/artists/2476102
 274396|Leroy Williams|https://api.discogs.com/artists/274396
-200815|Charles Mingus|https://api.discogs.com/artists/200815
-1664353|Bill Coss|https://api.discogs.com/artists/1664353
-2308183|Hugh Bell (2)|https://api.discogs.com/artists/2308183
-1424206|Charlie Chan (5)|https://api.discogs.com/artists/1424206
-3006945|Arnaud Maggs|https://api.discogs.com/artists/3006945
-2010234|Barry Ulanov|https://api.discogs.com/artists/2010234
-634055|Wilbur Little|https://api.discogs.com/artists/634055
-2619893|Ove Sørensen|https://api.discogs.com/artists/2619893
-3750|Cal Tjader|https://api.discogs.com/artists/3750
-473375|Don Elliott|https://api.discogs.com/artists/473375
-1813386|Alfred Schittler|https://api.discogs.com/artists/1813386
-1660373|Oswald Gritsch|https://api.discogs.com/artists/1660373
-264491|Mike Hennessey|https://api.discogs.com/artists/264491
-4607736|Dagmar Bartik|https://api.discogs.com/artists/4607736
-169335|Fritz Pauer|https://api.discogs.com/artists/169335
-4186744|Dante Martucci|https://api.discogs.com/artists/4186744
-430831|Sonny Dallas|https://api.discogs.com/artists/430831
-370737|Jimmy Campbell|https://api.discogs.com/artists/370737
-254976|Joe Morello|https://api.discogs.com/artists/254976
-239499|Sal Salvador|https://api.discogs.com/artists/239499
-1872896|Joe Quinn|https://api.discogs.com/artists/1872896
-884120|Ralph Martin|https://api.discogs.com/artists/884120
-372557|Eddie Costa|https://api.discogs.com/artists/372557
-274978|Eddie Bert|https://api.discogs.com/artists/274978
-332608|Michael Moore (2)|https://api.discogs.com/artists/332608
-268548|Butch Miles|https://api.discogs.com/artists/268548
-328323|Lou Stein|https://api.discogs.com/artists/328323
-1233327|Gus P. Statiras|https://api.discogs.com/artists/1233327
-265641|Flip Phillips|https://api.discogs.com/artists/265641
-259778|Paul Chambers (3)|https://api.discogs.com/artists/259778
-357696|Ralph Dorsey|https://api.discogs.com/artists/357696
-340559|Lenny McBrowne|https://api.discogs.com/artists/340559
-257623|Houston Person|https://api.discogs.com/artists/257623
-17546|Quincy Jones|https://api.discogs.com/artists/17546
-307373|Jimmy Jones (3)|https://api.discogs.com/artists/307373
-353270|Reunald Jones|https://api.discogs.com/artists/353270
-277952|Chubby Jackson|https://api.discogs.com/artists/277952
-6098307|Penelope (15)|https://api.discogs.com/artists/6098307
-2350959|Cynthia Pennell|https://api.discogs.com/artists/2350959
-57620|Buddy Rich|https://api.discogs.com/artists/57620
-2426924|Al Valente|https://api.discogs.com/artists/2426924
-2645713|Bob Bach|https://api.discogs.com/artists/2645713
-293069|Ralph Burns|https://api.discogs.com/artists/293069
-262140|Charlie Ventura|https://api.discogs.com/artists/262140
-340870|Hakim Jami|https://api.discogs.com/artists/340870
-1085755|Steve Solder|https://api.discogs.com/artists/1085755
-1658407|Jørgen Frigård|https://api.discogs.com/artists/1658407
-253778|Hilton Ruiz|https://api.discogs.com/artists/253778
-298937|Benoit Quersin|https://api.discogs.com/artists/298937
-265687|Ray Staff|https://api.discogs.com/artists/265687
-2484731|Edward Dipple|https://api.discogs.com/artists/2484731
-680469|Peter Bould|https://api.discogs.com/artists/680469
-355628|Christer Berg|https://api.discogs.com/artists/355628
-277537|Georg Riedel|https://api.discogs.com/artists/277537
-277538|Egil Johansen|https://api.discogs.com/artists/277538
-577101|Bengt Hallberg|https://api.discogs.com/artists/577101
-547323|Rune Gustafsson|https://api.discogs.com/artists/547323
-339020|Dave Castle|https://api.discogs.com/artists/339020
-724036|Peter Strindberg|https://api.discogs.com/artists/724036
-4208463|Frans Alkemade|https://api.discogs.com/artists/4208463
-4208462|William Fairbank Jr.|https://api.discogs.com/artists/4208462
-722373|Lars Samuelson|https://api.discogs.com/artists/722373
-405319|Bobby Shew|https://api.discogs.com/artists/405319
-733259|Jan Allan|https://api.discogs.com/artists/733259
-255152|Bill Graham|https://api.discogs.com/artists/255152
-255151|Lou Hackney|https://api.discogs.com/artists/255151
-255161|Al Jones|https://api.discogs.com/artists/255161
-255156|Wade Legge|https://api.discogs.com/artists/255156
-737369|Michael Gold|https://api.discogs.com/artists/737369
-2387551|C.V. &O.|https://api.discogs.com/artists/2387551
-259087|Arnold Fishkin|https://api.discogs.com/artists/259087
-259090|Harold Granowsky|https://api.discogs.com/artists/259090
-259088|Billy Bauer|https://api.discogs.com/artists/259088
-259086|Lennie Tristano|https://api.discogs.com/artists/259086
-342173|Norman Bates (2)|https://api.discogs.com/artists/342173
-1378200|Cesarius Alvim|https://api.discogs.com/artists/1378200
-467335|DOCTEUR FAUST|https://api.discogs.com/artists/467335
-463152|André Ceccarelli|https://api.discogs.com/artists/463152
-483546|Jean-Louis Rizet|https://api.discogs.com/artists/483546
-438045|Laurent Peyron|https://api.discogs.com/artists/438045
-977866|Olivier Hutman|https://api.discogs.com/artists/977866
-455852|Jean-Michel Kajdan|https://api.discogs.com/artists/455852
-413913|Eric Le Lann|https://api.discogs.com/artists/413913
-284699|Wolfgang Kraesse|https://api.discogs.com/artists/284699
-1828301|Christoph Ehbets|https://api.discogs.com/artists/1828301
-284701|Hartwig Bartz|https://api.discogs.com/artists/284701
-284702|André Condouant|https://api.discogs.com/artists/284702
-405363|Karlheinz Drechsel|https://api.discogs.com/artists/405363
-2250756|Waltraut Denger|https://api.discogs.com/artists/2250756
-284698|"Dr. Blues" Candy Green|https://api.discogs.com/artists/284698
-2114014|Donald J. Munz|https://api.discogs.com/artists/2114014
-318576|Victor Gaskin|https://api.discogs.com/artists/318576
-8249485|Georgia McEwen|https://api.discogs.com/artists/8249485
-2539020|Roger Pola|https://api.discogs.com/artists/2539020
-45102|Grady Tate|https://api.discogs.com/artists/45102
-388202|Allan Tucker|https://api.discogs.com/artists/388202
-422876|Phil Austin|https://api.discogs.com/artists/422876
-251777|Billy Taylor|https://api.discogs.com/artists/251777
-386428|Malcolm Addey|https://api.discogs.com/artists/386428
-260616|Tony Coe|https://api.discogs.com/artists/260616
-413173|Jackie Sharp|https://api.discogs.com/artists/413173
-323072|John Lamb|https://api.discogs.com/artists/323072
-328591|Ronnie Stephenson|https://api.discogs.com/artists/328591
-309988|Paul Gonsalves|https://api.discogs.com/artists/309988
-281482|Tubby Hayes|https://api.discogs.com/artists/281482
-282552|Ray Nance|https://api.discogs.com/artists/282552
-254400|Ed Thigpen|https://api.discogs.com/artists/254400
-272021|Bob Kesterson|https://api.discogs.com/artists/272021
-244729|Roy Porter|https://api.discogs.com/artists/244729
-272025|Jimmy Bunn|https://api.discogs.com/artists/272025
-145272|Eric Dolphy|https://api.discogs.com/artists/145272
-448769|Tommy Newsom|https://api.discogs.com/artists/448769
-1928960|Stephen Haas|https://api.discogs.com/artists/1928960
-260724|Osie Johnson|https://api.discogs.com/artists/260724
-72480|Jerome Richardson|https://api.discogs.com/artists/72480
-257025|Jim Hall|https://api.discogs.com/artists/257025
-300566|Teddy Charles|https://api.discogs.com/artists/300566
-258467|Alvin Stoller|https://api.discogs.com/artists/258467
+1753686|Mark Gardner (2)|https://api.discogs.com/artists/1753686
+1211627|Jack Fallon|https://api.discogs.com/artists/1211627
+3973593|Norman Burns (2)|https://api.discogs.com/artists/3973593
+59407|George Shearing|https://api.discogs.com/artists/59407
+323953|Ulf Wakenius|https://api.discogs.com/artists/323953
+729817|Jakob Tranberg|https://api.discogs.com/artists/729817
+285231|Niels-Henning Ørsted Pedersen|https://api.discogs.com/artists/285231
+9591685|Anders Hansen (7)|https://api.discogs.com/artists/9591685
+437947|Nilda Richards|https://api.discogs.com/artists/437947
+1267550|Jonas Johansen|https://api.discogs.com/artists/1267550
 254394|Oscar Peterson|https://api.discogs.com/artists/254394
-743219|Jeff Morton|https://api.discogs.com/artists/743219
-356568|Sal Mosca|https://api.discogs.com/artists/356568
-263098|Tony Aless|https://api.discogs.com/artists/263098
-354659|Jake Hanna|https://api.discogs.com/artists/354659
-277702|Ross Tompkins|https://api.discogs.com/artists/277702
-252743|Hein Van de Geyn|https://api.discogs.com/artists/252743
-6410805|Raffaella Marchetti|https://api.discogs.com/artists/6410805
-2292474|Maria Bonandrini|https://api.discogs.com/artists/2292474
-934848|Paolo Falascone|https://api.discogs.com/artists/934848
-742600|Art Lange|https://api.discogs.com/artists/742600
-2281465|Pino Ninfa|https://api.discogs.com/artists/2281465
-298100|Enrico Pieranunzi|https://api.discogs.com/artists/298100
-610264|Charlie Rice|https://api.discogs.com/artists/610264
-415789|Rudy Williams|https://api.discogs.com/artists/415789
-886907|Pierre Merlin|https://api.discogs.com/artists/886907
-1898644|Makoto Gotoh|https://api.discogs.com/artists/1898644
-120620|James Moody|https://api.discogs.com/artists/120620
-504440|Daniel J. White|https://api.discogs.com/artists/504440
-42193|Jo Boyer|https://api.discogs.com/artists/42193
-2940760|Kokkinis|https://api.discogs.com/artists/2940760
-335452|Bob Boucher|https://api.discogs.com/artists/335452
-701724|Dale Hillary|https://api.discogs.com/artists/701724
-6346919|Clayton Johnson (7)|https://api.discogs.com/artists/6346919
-369916|Michael Stuart|https://api.discogs.com/artists/369916
-2527835|Brian Lydall|https://api.discogs.com/artists/2527835
-534316|David Luke|https://api.discogs.com/artists/534316
-2948023|Vernon Welsh|https://api.discogs.com/artists/2948023
-1839142|Shuichi Yoshida|https://api.discogs.com/artists/1839142
-851933|Tadayuki Naitoh|https://api.discogs.com/artists/851933
+611497|Niels Lan Doky|https://api.discogs.com/artists/611497
+519658|Hans Nielsen|https://api.discogs.com/artists/519658
+516438|Monica Zetterlund|https://api.discogs.com/artists/516438
+1268428|Monique (19)|https://api.discogs.com/artists/1268428
+2641933|Milton Shaw|https://api.discogs.com/artists/2641933
