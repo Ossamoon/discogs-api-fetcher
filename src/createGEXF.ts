@@ -1,12 +1,7 @@
 import { writeFile } from "fs/promises";
 import Graph from "graphology";
 import * as gexf from "graphology-gexf";
-import { hasPerformingRole, splitRoles } from "./check";
-import {
-  readArtistsFromCSV,
-  readArtistToMasterFromCSV,
-  readMastersFromCSV,
-} from "./manageCSV";
+import { readArtistsFromCSV, readArtistToArtistFromCSV } from "./manageCSV";
 
 export const createGEXFfromCSV = async () => {
   const graph: Graph<{ label: string }, { weight: number }> = new Graph({
@@ -15,55 +10,20 @@ export const createGEXFfromCSV = async () => {
     allowSelfLoops: false,
   });
 
-  console.log("Reading masters...");
-  const masters = await readMastersFromCSV();
-
-  console.log("Reading artists...");
   const artists = await readArtistsFromCSV();
+  const artist2artist = await readArtistToArtistFromCSV();
 
-  console.log("Reading artistsToMasters...");
-  const artist2master = await readArtistToMasterFromCSV();
-
-  ("Creating Graph...");
-  masters
-    .map((master) => master.id)
-    .forEach((master_id) => {
-      // Get artists joined to the master
-      const joinedArtists = artist2master
-        .filter((v) => v.master_id === master_id)
-        .filter((v) => hasPerformingRole(splitRoles(v.roles)))
-        .map((v) => v.artist_id)
-        .map((v) => artists.find((w) => w.id === v))
-        .filter((v) => v !== undefined);
-
-      // Create nodes
-      joinedArtists.forEach((v) => {
-        if (!v) return;
-        if (graph.hasNode(v.id)) return;
-        graph.addNode(v.id, { label: v.name });
-      });
-
-      // Create edges
-      for (let i = 0; i < joinedArtists.length; i++) {
-        for (let j = i + 1; j < joinedArtists.length; j++) {
-          const [key, edgeWasAdded, sourceWasAdded, targetWasAdded] =
-            graph.updateEdge(
-              joinedArtists[i]?.id,
-              joinedArtists[j]?.id,
-              // anyを使ってしまっているので要注意
-              (attr: any) => {
-                return {
-                  ...attr,
-                  weight: (attr.weight || 0) + 1,
-                };
-              }
-            );
-          if (sourceWasAdded || targetWasAdded) {
-            throw new Error("Error on creating edge");
-          }
-        }
-      }
+  // Create nodes
+  artists
+    .filter((v) => v.is_performer === 1)
+    .forEach((v) => {
+      graph.addNode(v.id, { label: v.name });
     });
+
+  // Create edges
+  artist2artist.forEach((v) => {
+    graph.addEdge(v.id_min, v.id_max, { weight: v.masters.split(",").length });
+  });
 
   // Write GEXF file
   const gexfString = gexf.write(graph, {

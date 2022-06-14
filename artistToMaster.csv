@@ -515,64 +515,547 @@ artist_id|master_id|roles
 339534|1114718|Producer, Design, Photography By
 399141|1114718|Recorded By
 307498|1114718|Tenor Saxophone, Soprano Saxophone, Clarinet
-252748|355922|Bass
-2053935|355922|Cover [Design]
-595653|355922|Drums
-2254115|355922|Photography By [Cover]
-145256|355922|Piano
-216498|355922|Tenor Saxophone
-242087|769289|Bass
-253717|769289|Bass
-264979|769289|Drums, Producer, Mixed By
-362878|769289|Guitar
-808892|769289|Keyboards
-1400430|769289|Percussion
-327296|769289|Percussion
-53001|769289|Percussion
-26453|769289|Producer
-338116|769289|Producer, Mixed By, Saxophone, Flute, Written-By
-1553361|769289|Producer, Mixed By
-362877|769289|Trumpet
-258701|1333271|Alto Saxophone
-264868|1333271|Bass
-258702|1333271|Drums
-339187|1333271|Engineer
-739321|1333271|Liner Notes
-1830231|1333271|Photography [Cover]
-23165|1333271|Piano
-166628|1333271|Producer
-251769|1333271|Tenor Saxophone
-255563|1333271|Tenor Saxophone
-258459|1333271|Trumpet
-29958|896481|Alto Saxophone
-253445|896481|Bass
-1915387|896481|Design [Cover]
-257251|896481|Drums
-342667|896481|Liner Notes
-292019|896481|Photography By [Photo]
-463696|896481|Piano
-259082|896481|Trumpet
-262160|618301|Bass
-2476102|618301|Design
-274396|618301|Drums
-1753686|618301|Liner Notes
-277632|618301|Piano
-339534|618301|Producer, Photography By
-399141|618301|Recorded By
-1211627|1113093|Bass
-3973593|1113093|Drums
-59407|1113093|Piano
-323953|2192899|Acoustic Guitar, Electric Guitar
-253777|2192899|Alto Saxophone
-729817|2192899|Artwork By
-285231|2192899|Bass, Liner Notes
-9591685|2192899|Coordinator [Production Coordinator]
-437947|2192899|Coordinator [Production Coordinator]
-1267550|2192899|Drums
-254394|2192899|Piano
-611497|2192899|Producer, Coordinator [Production Coordinator]
-519658|2192899|Recorded By, Mixed By, Mastered By
-516438|2192899|Vocals
-1268428|2192899|Vocals
-64694|629909|Written-By
-2641933|629909|Written-By
+252748|355922|Bass, Bass
+2053935|355922|Cover [Design], Cover [Design]
+595653|355922|Drums, Drums
+2254115|355922|Photography By [Cover], Photography By [Cover]
+145256|355922|Piano, Piano
+216498|355922|Tenor Saxophone, Tenor Saxophone
+242087|769289|Bass, Bass
+253717|769289|Bass, Bass
+264979|769289|Drums, Producer, Mixed By, Drums, Producer, Mixed By
+362878|769289|Guitar, Guitar
+808892|769289|Keyboards, Keyboards
+1400430|769289|Percussion, Percussion
+327296|769289|Percussion, Percussion
+53001|769289|Percussion, Percussion
+26453|769289|Producer, Producer
+338116|769289|Producer, Mixed By, Saxophone, Flute, Written-By, Producer, Mixed By, Saxophone, Flute, Written-By
+1553361|769289|Producer, Mixed By, Producer, Mixed By
+362877|769289|Trumpet, Trumpet
+258701|1333271|Alto Saxophone, Alto Saxophone
+264868|1333271|Bass, Bass
+258702|1333271|Drums, Drums
+339187|1333271|Engineer, Engineer
+739321|1333271|Liner Notes, Liner Notes
+1830231|1333271|Photography [Cover], Photography [Cover]
+23165|1333271|Piano, Piano
+166628|1333271|Producer, Producer
+251769|1333271|Tenor Saxophone, Tenor Saxophone
+255563|1333271|Tenor Saxophone, Tenor Saxophone
+258459|1333271|Trumpet, Trumpet
+29958|896481|Alto Saxophone, Alto Saxophone
+253445|896481|Bass, Bass
+1915387|896481|Design [Cover], Design [Cover]
+257251|896481|Drums, Drums
+342667|896481|Liner Notes, Liner Notes
+292019|896481|Photography By [Photo], Photography By [Photo]
+463696|896481|Piano, Piano
+259082|896481|Trumpet, Trumpet
+262160|618301|Bass, Bass
+2476102|618301|Design, Design
+274396|618301|Drums, Drums
+1753686|618301|Liner Notes, Liner Notes
+277632|618301|Piano, Piano
+339534|618301|Producer, Photography By, Producer, Photography By
+399141|618301|Recorded By, Recorded By
+1211627|1113093|Bass, Bass
+3973593|1113093|Drums, Drums
+59407|1113093|Piano, Piano
+323953|2192899|Acoustic Guitar, Electric Guitar, Acoustic Guitar, Electric Guitar
+253777|2192899|Alto Saxophone, Alto Saxophone
+729817|2192899|Artwork By, Artwork By
+285231|2192899|Bass, Liner Notes, Bass, Liner Notes
+9591685|2192899|Coordinator [Production Coordinator], Coordinator [Production Coordinator]
+437947|2192899|Coordinator [Production Coordinator], Coordinator [Production Coordinator]
+1267550|2192899|Drums, Drums
+254394|2192899|Piano, Piano
+611497|2192899|Producer, Coordinator [Production Coordinator], Producer, Coordinator [Production Coordinator]
+519658|2192899|Recorded By, Mixed By, Mastered By, Recorded By, Mixed By, Mastered By
+516438|2192899|Vocals, Vocals
+1268428|2192899|Vocals, Vocals
+64694|629909|Written-By, Written-By
+2641933|629909|Written-By, Written-By
+75617|581769|Alto Saxophone
+272015|581769|Bass
+244729|581769|Drums
+272017|581769|Electric Guitar
+272018|581769|Piano
+1009967|581769|Supervised By
+262587|581769|Tenor Saxophone
+23755|581769|Trumpet
+255945|816512|Alto Saxophone
+609456|816512|Art Direction
+357714|816512|Bass
+312641|816512|Drums
+383801|816512|Engineer
+284525|816512|Engineer [Assistant]
+4079629|816512|Illustration [Cover Painting]
+809807|816512|Liner Notes
+325845|816512|Mastered By
+2256957|816512|Photography By [Back Cover]
+255116|816512|Piano
+258088|983024|Alto Saxophone
+255767|983024|Bass
+339534|983024|Design [Cover]
+228917|983024|Drums
+252966|983024|Engineer
+334380|983024|Liner Notes
+272016|983024|Piano
+254079|512039|Bass
+1947132|512039|Design [Cover]
+376280|512039|Drums
+319919|512039|Engineer
+2624194|512039|Photography By
+253065|512039|Piano
+318693|512039|Producer, Recording Supervisor
+65755|864477|Bass
+339534|864477|Design
+254073|864477|Drums
+1713828|864477|Liner Notes
+218046|864477|Piano
+252966|864477|Recorded By
+272685|864477|Tenor Saxophone
+251333|864477|Tenor Saxophone
+525240|553289|Bass
+2358443|553289|Coordinator [Recording Arranged By]
+1889021|553289|Design [Cover]
+411402|553289|Drums
+1838204|553289|Liner Notes
+1308822|553289|Photography By [Back Cover]
+2358444|553289|Photography By [Front Cover]
+29992|553289|Piano
+266539|553289|Producer, Remix
+2358445|553289|Recorded By
+518869|1019027|Bass
+382099|1019027|Bass
+1098894|1019027|Drums
+746391|1019027|Guitar
+1972725|1019027|Piano
+413178|1019027|Piano
+255752|1019027|Piano
+272669|1019027|Tenor Saxophone
+292020|1019027|Trumpet
+292995|303041|Bass
+595653|303041|Drums
+332286|303041|Liner Notes
+145256|303041|Piano
+2764836|303041|Producer
+216498|303041|Tenor Saxophone
+235322|1374955|Arranged By, Conductor
+303415|1374955|Arranged By, Conductor
+1889236|1374955|Art Direction
+303407|1374955|Bass
+303411|1374955|Bass
+303412|1374955|Clarinet, Saxophone [Soprano]
+303413|1374955|Clarinet, Woodwind
+290370|1374955|Clarinet [Bass], Tuba
+577649|1374955|Drums
+303418|1374955|Drums
+282077|1374955|Mixed By
+303419|1374955|Percussion
+2033401|1374955|Photography By
+116605|1374955|Piano
+2430024|1374955|Piano
+303414|1374955|Producer
+303420|1374955|Saxophone [Bariton], Woodwind
+96443|1374955|Saxophone [Tenor]
+270862|1374955|Trombone
+303409|1374955|Trumpet
+303421|1374955|Vocals
+518831|1374955|Woodwind
+303416|1374955|Woodwind
+303410|1374955|Woodwind
+292813|1374955|Woodwind
+504698|2464921|Art Direction
+1832919|2464921|Art Direction
+2266990|2464921|Artwork [Sculpture]
+342667|2464921|Liner Notes
+1655215|2464921|Photography By
+253353|2464921|Producer
+2134162|481954|Design [Cover]
+1750530|481954|Liner Notes
+1839353|813576|Cover, Artwork [Art]
+606628|813576|Engineer, Mastered By
+353919|813576|Engineer, Recorded By
+1678023|813576|Liner Notes
+2247915|813576|Photography By
+212002|813576|Piano
+358475|813576|Producer
+2248577|866266|Cover
+353919|866266|Engineer
+1636254|866266|Liner Notes
+606628|866266|Mastered By
+774540|866266|Photography By
+338201|866266|Piano
+358475|866266|Producer
+458340|1120711|Art Direction, Design
+270054|1120711|Drums
+252966|1120711|Engineer [Recording]
+294752|1120711|Guitar
+354751|1120711|Mastered By [In 24-bit]
+29981|1120711|Organ
+292019|1120711|Photography By
+252962|1120711|Producer
+252960|1120711|Producer [For Release]
+267185|1013362|Performer
+259075|1013362|Performer
+309986|1013362|Performer
+228917|1013362|Performer
+251783|1013362|Performer
+552924|327639|Bass
+45671|327639|Drums
+2132857|327639|Engineer
+252017|327639|Guitar
+4118849|327639|Liner Notes
+299152|327639|Organ [Hammond], Piano
+288876|327639|Photography By [Cover Photo], Producer
+251623|1179388|Bass
+365297|1179388|Bass [Uncredited]
+228917|1179388|Drums
+322918|1179388|Drums [Uncredited]
+252017|1179388|Guitar [Uncredited]
+29992|1179388|Piano
+59287|1179388|Tenor Saxophone
+217242|1179388|Trumpet
+303141|1179388|Trumpet [Uncredited]
+1201623|493027|Mastered By
+267702|493027|Written-By
+205787|493027|Written-By
+804789|1675456|Bass
+1060470|1675456|Drums
+1413339|1675456|Guitar
+919405|1675456|Piano
+266539|1675456|Producer
+29958|268576|Alto Saxophone
+251776|268576|Bass
+253445|268576|Bass
+1915387|268576|Design
+29977|268576|Drums
+261196|268576|Drums
+1027175|268576|Ensemble
+1915386|268576|Ensemble
+342667|268576|Liner Notes
+29973|268576|Piano
+29969|268576|Trumpet
+386834|654410|Arranged By, Co-producer, Piano
+1864624|654410|Art Direction
+253208|654410|Bass
+525096|654410|Co-producer
+4055168|654410|Design
+267102|654410|Drums
+873378|654410|Edited By
+341954|654410|Engineer
+476071|654410|Engineer [Assistant]
+252960|654410|Liner Notes
+264569|654410|Tenor Saxophone
+200766|654410|Trumpet
+263795|1175915|Bass
+228917|1175915|Drums
+334380|1175915|Liner Notes
+267675|1175915|Piano
+261286|1175915|Tenor Saxophone
+263796|1175915|Tenor Saxophone
+913758|1175915|Trombone
+23755|1175915|Trumpet
+327018|693956|Alto Saxophone
+327033|693956|Baritone Saxophone
+381506|693956|Bass
+258089|693956|Bass
+261196|693956|Drums
+387929|693956|Engineer
+254946|693956|Liner Notes, Producer
+4380482|693956|Photography By
+2614966|693956|Piano
+343450|693956|Producer
+259076|693956|Tenor Saxophone
+295652|693956|Trombone
+254945|693956|Trumpet
+355880|739553|Bass
+2906402|739553|Design
+59280|739553|Drums, Producer
+893619|739553|Engineer
+1584729|739553|Lacquer Cut By
+2906403|739553|Photography By, Design Concept
+1507894|739553|Piano
+755520|739553|Tenor Saxophone
+252966|638286|Lacquer Cut By
+252748|536153|Bass
+65755|536153|Bass
+254073|536153|Drums
+145256|536153|Piano
+216498|536153|Tenor Saxophone
+284700|710463|Alto Saxophone, Flute
+373870|710463|Bass
+265390|710463|Drums
+23165|710463|Piano
+64694|710463|Trumpet
+259075|850204|Bass
+229498|850204|Drums
+29992|850204|Piano
+135930|850204|Tenor Saxophone
+349615|1131069|Alto Saxophone
+256091|1131069|Bass
+274396|1131069|Drums
+339516|1131069|Guitar
+277632|1131069|Piano
+200815|567959|Bass
+228917|567959|Drums
+1664353|567959|Liner Notes
+2308183|567959|Photography By [Cover Photo]
+265629|567959|Piano
+10096|567959|Tenor Saxophone, Flute
+271154|567959|Trumpet
+1424206|733424|Alto Saxophone
+200815|733424|Bass
+3006945|733424|Cover
+229498|733424|Drums
+2010234|733424|Liner Notes
+29992|733424|Piano
+64694|733424|Trumpet
+634055|973257|Bass
+1889021|973257|Design [Cover Design]
+252607|973257|Drums
+2619893|973257|Engineer [Recording]
+341960|973257|Mixed By [Mixing Engineer]
+272016|973257|Piano
+266539|973257|Producer, Photography By
+1688575|852007|Liner Notes
+252966|852007|Mastered By
+256568|852007|Producer
+3750|852007|Vibraphone [Vibes]
+473375|852007|Vibraphone [Vibes], Trumpet, Mellophone
+2248577|812781|Artwork [Cover Art]
+1813386|812781|Engineer
+1660373|812781|Engineer [Assistant]
+179055|812781|Flugelhorn
+264491|812781|Liner Notes
+606628|812781|Mastered By
+4607736|812781|Photography By [Back Cover Photography]
+169335|812781|Piano [Incorrectly Credited For Bass]
+358475|812781|Producer
+253777|1362633|Alto Saxophone
+275048|1362633|Bass
+4186744|1362633|Bass
+430831|1362633|Bass
+370737|1362633|Drums
+254976|1362633|Drums
+239499|1362633|Guitar, Leader
+1872896|1362633|Liner Notes
+320757|1362633|Piano
+884120|1362633|Piano
+372557|1362633|Piano, Vibraphone
+274978|1362633|Trombone
+332608|1212103|Bass
+652824|1212103|Cover
+268548|1212103|Drums
+328323|1212103|Piano
+1233327|1212103|Producer
+265641|1212103|Saxophone
+259778|719687|Bass
+357696|719687|Congas
+340559|719687|Drums
+135873|719687|Piano
+257623|719687|Tenor Saxophone
+307700|1084688|Bass
+709825|1084688|Compiled By
+258702|1084688|Drums
+17546|1084688|Flugelhorn
+307373|1084688|Piano
+342667|1084688|Producer
+353270|1084688|Trumpet
+271154|1084688|Trumpet
+277952|721365|Bass
+6098307|721365|Cover
+2350959|721365|Cover, Design
+57620|721365|Drums
+2426924|721365|Guitar
+2645713|721365|Liner Notes
+293069|721365|Piano
+267185|721365|Tenor Saxophone
+262140|721365|Tenor Saxophone
+312553|721365|Trombone
+309986|721365|Trumpet
+340870|1385391|Bass
+1889021|1385391|Design
+1085755|1385391|Drums
+1658407|1385391|Liner Notes
+341960|1385391|Mixed By
+253778|1385391|Piano
+266539|1385391|Producer, Photography By
+270609|1385391|Recorded By
+298937|858579|Bass
+322918|858579|Drums
+252017|858579|Guitar
+265687|858579|Mastered By
+2484731|858579|Producer
+680469|858579|Producer, Recorded By
+298943|858579|Tenor Saxophone, Flute
+634055|671438|Bass
+1889021|671438|Design [Cover Design]
+252607|671438|Drums
+2619893|671438|Engineer [Recording Engineer]
+341960|671438|Mixed By [Mixing Engineer]
+272016|671438|Piano
+266539|671438|Producer, Photography By
+355628|983358|Engineer
+277537|983358|Featuring, Bass
+277538|983358|Featuring, Drums
+577101|983358|Featuring, Piano
+547323|983358|Guitar
+339020|983358|Liner Notes [Translation]
+724036|983358|Mastered By
+4208463|983358|Photography By [Cover Photo]
+4208462|983358|Photography By [Cover Photo]
+722373|983358|Producer, Liner Notes
+405319|983358|Trumpet, Flugelhorn
+733259|983358|Trumpet, Flugelhorn, Liner Notes
+284700|841597|Alto Saxophone, Flute
+255152|841597|Baritone Saxophone
+373870|841597|Bass
+255151|841597|Bass
+255161|841597|Drums
+265390|841597|Drums
+23165|841597|Piano
+255156|841597|Piano
+64694|841597|Trumpet
+65755|501734|Bass
+254073|501734|Drums
+737369|501734|Liner Notes [May, 1964]
+218046|501734|Piano
+252966|501734|Recorded By
+272685|501734|Tenor Saxophone
+251333|501734|Tenor Saxophone
+2387551|1400875|Design
+259092|732020|Alto Saxophone
+259087|732020|Bass
+259090|732020|Drums
+259088|732020|Guitar
+259086|732020|Piano
+259089|732020|Tenor Saxophone
+170329|654801|Alto Saxophone
+342173|654801|Bass
+254976|654801|Drums
+37737|654801|Piano, Written-By
+1378200|1323081|Bass
+467335|1323081|Cover
+463152|1323081|Drums
+483546|1323081|Engineer
+438045|1323081|Engineer
+977866|1323081|Grand Piano
+455852|1323081|Producer
+413913|1323081|Trumpet
+284699|1924908|Bass
+1828301|1924908|Design [Grafiker]
+284701|1924908|Drums
+284700|1924908|Flute, Alto Saxophone
+284702|1924908|Guitar
+405363|1924908|Liner Notes
+2250756|1924908|Photography By
+284698|1924908|Vocals, Piano, Claviola
+2114014|1654861|Art Direction
+318576|1654861|Bass
+8249485|1654861|Coordinator [Production Co-ordinator]
+2539020|1654861|Cover [Photo]
+45102|1654861|Drums
+388202|1654861|Engineer [Associate]
+422876|1654861|Lacquer Cut By
+251777|1654861|Piano, Producer
+386428|1654861|Producer, Engineer [Recording]
+260616|1121940|Alto Saxophone
+413173|1121940|Baritone Saxophone
+323072|1121940|Bass
+328591|1121940|Drums
+413178|1121940|Piano
+1636254|1121940|Sleeve Notes
+309988|1121940|Tenor Saxophone
+272669|1121940|Tenor Saxophone
+281482|1121940|Tenor Saxophone, Flute, Vibraphone
+282552|1121940|Violin, Trumpet
+254079|1504334|Bass
+1889021|1504334|Design [Cover]
+254400|1504334|Drums
+272016|1504334|Piano
+266539|1504334|Producer, Photography By
+341960|1504334|Recorded By
+75617|1094842|Alto Saxophone
+272021|1094842|Bass
+244729|1094842|Drums
+272025|1094842|Piano
+272026|1094842|Trumpet
+261400|1031996|Baritone Saxophone
+427125|1031996|Bass
+145272|1031996|Bass Clarinet
+448769|1031996|Bass Clarinet
+259074|1031996|Clarinet, Tenor Saxophone
+1928960|1031996|Cover
+260724|1031996|Drums
+72480|1031996|Flute, Tenor Saxophone
+257025|1031996|Guitar
+339516|1031996|Guitar
+334380|1031996|Liner Notes
+265629|1031996|Piano
+263796|1031996|Tenor Saxophone
+272026|1031996|Trumpet
+300566|1031996|Vibraphone
+252998|1011749|Bass
+258467|1011749|Drums
+339187|1011749|Engineer [Original Session]
+256065|1011749|Guitar
+254394|1011749|Piano
+166628|1011749|Producer [Original Session]
+251769|1011749|Tenor Saxophone
+1941105|1089904|Art Direction
+1996694|1089904|Art Direction
+321493|1089904|Bass
+2422218|1089904|Design
+328233|1089904|Drums
+710508|1089904|Engineer [Assistant]
+1899665|1089904|Liner Notes
+325845|1089904|Mastered By
+360475|1089904|Mixed By
+2720689|1089904|Photography By
+619319|1089904|Piano
+377770|1089904|Recorded By
+296961|1089904|Saxophone, Producer
+259092|804963|Alto Saxophone
+259087|804963|Bass
+251776|804963|Bass
+253445|804963|Bass
+263096|804963|Drums
+743219|804963|Drums
+263097|804963|Drums
+259088|804963|Guitar
+259078|804963|Piano
+356568|804963|Piano
+263098|804963|Piano
+30486|804963|Tenor Saxophone
+252998|1284822|Bass
+354659|1284822|Drums
+277702|1284822|Piano
+252743|1849564|Bass
+6410805|1849564|Cover [Art]
+2292474|1849564|Cover [Design]
+463152|1849564|Drums
+606628|1849564|Engineer [Mastering]
+934848|1849564|Engineer [Recording]
+742600|1849564|Liner Notes
+2281465|1849564|Photography
+298100|1849564|Piano
+358475|1849564|Producer
+255767|907369|Bass
+610264|907369|Drums
+252821|907369|Guitar
+1688575|907369|Liner Notes
+252966|907369|Mastered By
+256568|907369|Producer
+415789|907369|Tenor Saxophone
+251778|907369|Trombone
+272026|907369|Trumpet
+251780|1565629|Bass
+229498|1565629|Drums
+886907|1565629|Illustration
+1898644|1565629|Liner Notes
+259078|1565629|Piano
+120620|1565629|Tenor Saxophone
+254945|1565629|Trumpet

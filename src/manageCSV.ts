@@ -3,12 +3,12 @@ import { readFile, writeFile } from "fs/promises";
 const DELIMITER = "|";
 
 export type MasterForm = {
-  id: string;
+  master_id: number;
   title: string;
-  year: string;
-  url: string;
+  year: number;
   thumb_image: string;
   cover_image: string;
+  release_id: number;
   status: string;
 };
 
@@ -23,38 +23,68 @@ export const readMastersFromCSV = async (): Promise<MasterForm[]> => {
     if (lines[i].trim() === "") {
       continue;
     }
-    const [id, title, year, url, thumb_image, cover_image, status] =
-      lines[i].split(DELIMITER);
-    masters.push({ id, title, year, url, thumb_image, cover_image, status });
+    const [
+      master_id,
+      title,
+      year,
+      thumb_image,
+      cover_image,
+      release_id,
+      status,
+    ] = lines[i].split(DELIMITER);
+    masters.push({
+      master_id: Number(master_id),
+      title,
+      year: Number(year),
+      thumb_image,
+      cover_image,
+      release_id: Number(release_id),
+      status,
+    });
   }
   return masters;
 };
 
 export const writeMastersToCSV = async (masters: MasterForm[]) => {
   let data =
-    ["id", "title", "year", "url", "thumb_image", "cover_image", "status"].join(
-      DELIMITER
-    ) + "\n";
+    [
+      "master_id",
+      "title",
+      "year",
+      "thumb_image",
+      "cover_image",
+      "release_id",
+      "status",
+    ].join(DELIMITER) + "\n";
   for (const {
-    id,
+    master_id,
     title,
     year,
-    url,
     thumb_image,
     cover_image,
+    release_id,
     status,
   } of masters) {
     data +=
-      [id, title, year, url, thumb_image, cover_image, status].join(DELIMITER) +
-      "\n";
+      [
+        master_id,
+        title,
+        year,
+        thumb_image,
+        cover_image,
+        release_id,
+        status,
+      ].join(DELIMITER) + "\n";
   }
   await writeFile("./masters.csv", data, { encoding: "utf-8" });
 };
 
 export type ArtistForm = {
-  id: string;
+  id: number;
   name: string;
-  url: string;
+  thumb_image: string;
+  main_image: string;
+  is_performer: number;
 };
 
 export const readArtistsFromCSV = async (): Promise<ArtistForm[]> => {
@@ -68,23 +98,34 @@ export const readArtistsFromCSV = async (): Promise<ArtistForm[]> => {
     if (lines[i].trim() === "") {
       continue;
     }
-    const [id, name, url] = lines[i].split(DELIMITER);
-    artists.push({ id, name, url });
+    const [id, name, thumb_image, main_image, is_performer] =
+      lines[i].split(DELIMITER);
+    artists.push({
+      id: Number(id),
+      name,
+      thumb_image,
+      main_image,
+      is_performer: Number(is_performer),
+    });
   }
   return artists;
 };
 
 export const writeArtistsToCSV = async (artists: ArtistForm[]) => {
-  let data = ["id", "name", "url"].join(DELIMITER) + "\n";
-  for (const { id, name, url } of artists) {
-    data += [id, name, url].join(DELIMITER) + "\n";
+  let data =
+    ["id", "name", "thumb_image", "main_image", "is_performer"].join(
+      DELIMITER
+    ) + "\n";
+  for (const { id, name, thumb_image, main_image, is_performer } of artists) {
+    data +=
+      [id, name, thumb_image, main_image, is_performer].join(DELIMITER) + "\n";
   }
   await writeFile("./artists.csv", data, { encoding: "utf-8" });
 };
 
 export type ArtistToMasterForm = {
-  artist_id: string;
-  master_id: string;
+  artist_id: number;
+  master_id: number;
   roles: string;
 };
 
@@ -102,7 +143,11 @@ export const readArtistToMasterFromCSV = async (): Promise<
       continue;
     }
     const [artist_id, master_id, roles] = lines[i].split(DELIMITER);
-    a2m.push({ artist_id, master_id, roles });
+    a2m.push({
+      artist_id: Number(artist_id),
+      master_id: Number(master_id),
+      roles,
+    });
   }
   return a2m;
 };
@@ -118,8 +163,8 @@ export const writeArtistToMasterToCSV = async (
 };
 
 export type ArtistToArtistForm = {
-  id_min: string;
-  id_max: string;
+  id_min: number;
+  id_max: number;
   masters: string;
 };
 
@@ -137,7 +182,7 @@ export const readArtistToArtistFromCSV = async (): Promise<
       continue;
     }
     const [id_min, id_max, masters] = lines[i].split(DELIMITER);
-    a2a.push({ id_min, id_max, masters });
+    a2a.push({ id_min: Number(id_min), id_max: Number(id_max), masters });
   }
   return a2a;
 };

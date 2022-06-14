@@ -45,6 +45,33 @@ export const fetchRelease = async (
   return data;
 };
 
+export const fetchArtist = async (
+  artist_id: number
+): Promise<{
+  id: number;
+  images?: { type: string; uri: string; uri150: string }[];
+}> => {
+  const options: AxiosRequestConfig = {
+    url: `https://api.discogs.com/artists/${artist_id}`,
+    responseType: "json",
+    headers: {
+      Authorization: `Discogs key=${api_key}, secret=${api_secret}`,
+    },
+  };
+
+  const data = axios(options)
+    .then((res: AxiosResponse) => {
+      const { data } = res;
+      return data;
+    })
+    .catch((err: AxiosError) => {
+      console.error("Error on fetch artists");
+      throw err;
+    });
+
+  return data;
+};
+
 export type searchMasterResponse = {
   pagination: Pagination;
   results: {
@@ -94,11 +121,10 @@ export const searchMaster = async (
   }
 };
 
-export const getArtistsDataFromMasterId = async (
-  master_id: number
+export const getArtistsDataFromReleaseId = async (
+  release_id: number
 ): Promise<[boolean, ...Artist[]]> => {
-  const master = await fetchMaster(master_id);
-  const main_release = await fetchRelease(master.main_release);
+  const main_release = await fetchRelease(release_id);
 
   if (
     main_release.formats.some((format) =>
