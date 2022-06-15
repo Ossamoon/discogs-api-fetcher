@@ -5,7 +5,7 @@ import {
   updateMasterDatabese,
   updateArtistDatabase,
 } from "./createCSV";
-import { createGEXFfromCSV } from "./createGEXF";
+import { createGEXFfromCSV, createJSONfromCSV } from "./exportFile";
 
 const main = async () => {
   // await createMasterDatabase();
@@ -13,7 +13,8 @@ const main = async () => {
   // await createArtistDatabase();
   // await updateArtistDatabase();
   // await createConnectionDatabase();
-  await createGEXFfromCSV();
+  // await createGEXFfromCSV();
+  // await createJSONfromCSV();
   console.log("Finish");
 };
 
